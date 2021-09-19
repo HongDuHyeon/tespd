@@ -1,0 +1,154 @@
+@charset "utf-8";
+
+
+/*모바일때 다시 작업할것들*/
+#header .ham {
+    display: none;
+}
+
+
+.wrap {
+    background: #fff;
+    position: relative;
+    /* max-width: 1920px;
+    margin: 0 auto; */
+}
+#header {
+    position: relative;
+    z-index: 9999;
+}
+#header .header_wrap{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#header .header_wrap {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    line-height: 59px;
+}
+#header h1 {
+    width: 150px;
+    font-size: 0;
+}
+#header h1 a {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 31px;
+}
+#header .gnb {
+    display: flex;
+    
+}
+#header .gnb li {
+    margin-right: 75px;
+}
+
+#header .gnb li:last-child {
+    margin-right: 0;
+}
+
+#header .gnb li a {
+    color: #fff;
+    font-family: 'montserrat';
+}
+.overlay {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 99;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
