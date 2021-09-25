@@ -81,11 +81,13 @@
 .popup {
     display: none;
     position: fixed;
-    top: 50%;
+    top: 30%;
     left: 50%;
     width: 600px;
-    height:600px;
-    background: #fff;
+    height:400px;
+    min-height: 300px;
+    /* max-height: 90vh; */
+    max-height: calc(90vh - 120px);
     transform: translate(-50%, -50%);
     z-index: 100;
 }
@@ -105,8 +107,18 @@
     background: url(/img/common/popup_close.png) no-repeat center center;
     background-size: 22px auto;
 }
+.popup .popup_slide {
+    position: relative;
+    overflow: hidden;
+}
+.popup .popup_slide li img {
+    width: 100%;
+    height: 100%;
+}
 
-
+.popup .swiper-button-next, .popup  .swiper-button-prev {
+    top: 70%;
+}
 
 .overlay {
     display: none;
@@ -117,7 +129,7 @@
     bottom: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.4);
+    background: rgba(0,0,0,0.7);
     z-index: 99;
 }
 
