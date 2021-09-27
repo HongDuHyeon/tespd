@@ -96,7 +96,7 @@
 .popup .tit_wrap {
     position: relative;
     width: 100%;
-    line-height: 70px;
+    height: 70px;
     background: #3B7EFF;
 }
 .popup .tit_wrap .popup_close {

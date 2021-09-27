@@ -2,10 +2,6 @@ $(function(){
     
     function popup(){
         popupSlide = new Swiper('.popup_slide.swiper-container', {
-<<<<<<< HEAD
-            // loop:true,
-=======
->>>>>>> 06a323c3a535b9dfce3d8785488d0e23daaa9b71
             observer: true,
             observeParents: true,
             navigation: {
@@ -66,11 +62,7 @@ $('.cont_wrap .thumb').click(function(){
     //버튼 누를때마다 리스트 삭제 , 모달 닫기
     // popup_slide > swiper-wrapper > swiper-slide 
     $('.popup_close').click(function(){
-<<<<<<< HEAD
         popupSlide.destroy(); 
-=======
-        popupSlide.destroy();
->>>>>>> 06a323c3a535b9dfce3d8785488d0e23daaa9b71
         $('.popup_slide .swiper-wrapper li').remove(); 
         $('.overlay').css('display','none');
         $('.popup').css('display','none');
