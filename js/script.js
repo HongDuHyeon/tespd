@@ -69,5 +69,10 @@ $('.cont_wrap .thumb').click(function(){
         $('html, body').css('overflow','visible')
     });
 
+    // hamberger btn 
+    $('#header .ham').click(function(){
+        $(this).toggleClass('view')
+        $('#header .gnb').toggleClass('view')
+    })
  
 })

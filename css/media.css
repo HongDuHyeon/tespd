@@ -1,0 +1,277 @@
+@charset "utf-8";
+
+
+@media (max-width:1150px){
+    #header .header_wrap {
+        padding: 0 20px;
+    }
+    .main_slide {
+        height: 560px;
+    }
+    .container {
+        max-width: 968px;
+        padding: 0 20px;
+    }
+    .youtube_content {
+        margin: 110px 0 90px;
+    }
+    .youtube_content ul li {
+        width: calc(50% - 20px);
+        margin-right: 20px;
+    }
+    .youtube_content ul li:last-child {
+        margin-right: 0;
+    }
+    
+}
+
+@media (max-width:860px){
+    .contents .btn_wrap button {
+        line-height: 68px;
+    }
+    .main_slide li img {
+        display: none;
+    }
+    .main_slide li.light {
+        background: url(/img/common/slider1.png) no-repeat center center;
+    }
+    .main_slide li.stage {
+        background: url(/img/common/slider4.png) no-repeat center center;
+    }
+    .main_slide li.sound {
+        background: url(/img/common/slider3.png) no-repeat center center;
+    }
+    .main_slide li.truss {
+        background: url(/img/common/slider5.png) no-repeat center center;
+    }
+    .main_slide li.special {
+        background: url(/img/common/slider2.png) no-repeat center center;
+    }
+    .contents .cont_wrap .section {
+        margin-right: -20px;
+    }
+    .contents .cont_wrap .section dd {
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+    .contents .cont_wrap .section dd .thumb,
+    .contents .cont_wrap .section .thumb.type01 > a {
+        width: 300px;
+        height: 200px;
+    }
+    .contents .cont_wrap .section .category_tit {
+        font-weight: 700;
+    }
+    .bottom_content {
+        margin-bottom: 40px;
+    }
+    .bottom_content .section .thumb {
+        margin-bottom: 0;
+    }
+}
+@media (max-width:768px){
+    #header .ham {
+        display: block;
+        position: relative;
+        font-size: 0;
+        width: 60px;
+        height: 60px;
+    }
+    #header .ham p{
+        position: absolute;
+        right: 30%;
+        top: 50%;
+        width: 25%;
+        height: 3px;
+        background: #fff;
+        border-radius: 2px;
+        transition: width 0.4s, background 0.4s, transform 0.4s;
+    }
+    #header .ham p:before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: -9px;
+        width: 160%;
+        height: 3px;
+        background: #fff;
+        border-radius: 2px;
+        transition: top 0.4s, width 0.4s, transform 0.1s 0.4s
+    }
+    #header .ham p:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: -9px;
+        width: 120%;
+        height: 3px;
+        background: #fff;
+        border-radius: 2px;
+        transition: bottom 0.4s, width 0.4s, transform 0.1s 0.4s;
+    }
+    #header .ham.view > p {
+        width: 40%;
+        background: #fff;
+        transform: rotate(360deg);
+    }
+    #header .ham.view > p:before {
+        top: 0;
+        width: 100%;
+        background: #333333;
+        transform: rotate(-45deg);
+    }
+    #header .ham.view > p:after {
+        bottom: 0;
+        width: 100%;
+        background: #333333;
+        transform: rotate(45deg);
+    }
+    #header .gnb {
+        position: absolute;
+        right: -100%;
+        top: 0;
+        width: 300px;
+        height: 100vh;
+        padding-top: 60px;
+        background: #fff;
+        display: block;
+        transition: right 0.3s;
+    }
+    #header .gnb.view {
+        right: 0;
+    }
+    #header .gnb li {
+        margin-right: 0;
+        width: 100%;
+        padding: 0 20px;
+    }
+    #header .gnb li a {
+        color: #000;
+        font-size: 24px;
+    }
+    .contents .btn_wrap button {
+        font-size: 18px;
+        line-height: 58px;
+
+    }
+    .contents .cont_wrap .section dd .thumb,
+    .contents .cont_wrap .section .thumb.type01 > a {
+        width: 240px;
+        height: 160px;
+        margin-right: 20px;
+    }
+    .youtube_content ul li {
+        width: 340px;
+        height: 240px;
+    }
+}
+
+@media (max-width:565px){
+    
+
+    .contents .cont_wrap .section dd .thumb,
+    .contents .cont_wrap .section .thumb.type01 > a {
+        width: 200px;
+        height: 140px;
+        margin-right: 20px;
+    }
+    .main_slide .txt_wrap p {
+        font-size: 26px;
+    }
+    .main_slide .txt_wrap span {
+        font-size: 14px;
+    }
+    br {
+        display: none;
+    }
+}
+@media (max-width:475px){
+    .contents .cont_wrap .section dd .thumb,
+    .contents .cont_wrap .section .thumb.type01 > a {
+        width: 150px;
+        height: 100px;
+        margin-right: 10px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
