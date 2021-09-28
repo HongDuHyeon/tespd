@@ -97,12 +97,9 @@
 }
 .contents .container > .cont_wrap {
     display: none;
-    /* opacity: 0; 
-    transition: opacity 0.15s; */
 }
-.contents .container > .active {
+.contents .container > .cont_wrap.active {
     display: block;
-    /* opacity: 1; */
 } 
 .contents .cont_wrap .section {
     margin-top: 40px;

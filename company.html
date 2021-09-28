@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&amp;display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">   
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link href='//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css' rel='stylesheet' type='text/css'>
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/company.css" rel="stylesheet">
+    <link href="css/media.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrap bg">
+        <header id="header">
+            <div class="header_section">
+                <div class="container">
+                    <div class="header_wrap">
+                        <h1>
+                            <a href="" class="logo"><img src="/img/common/logo.png" alt=""></a>
+                        </h1>
+                        <ul class="gnb">
+                            <li>
+                                <a href="">Company</a>
+                            </li>
+                            <li>
+                                <a href="">Portfolio</a>
+                            </li>
+                            <li>
+                                <a href="">Contact Us</a>
+                            </li>
+                        </ul>
+                        <a href="#" class="ham">햄버거 버튼
+                            <p></p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="contents">
+            <div class="top_section">
+                <div class="tit_wrap">
+                    <p class="tit">PRO DIRECTOR</p>
+                    <p class="info">
+                        차별화된 아이디어와 다양한 경험으로<br/>
+                        함께 성장하는 TES PD가 되겠습니다.
+                    </p>
+                </div>
+            </div> 
+            <div class="container">
+                <div class="bottom_section">
+                    <div class="list skill">
+                        <p class="tit">
+                            SKILL
+                        </p>
+                        <span class="info">
+                            실제 보유한 여러 장비들과 빠른 업데이트로 최신 트랜드에 맞게 진행 해드리며 철저한 준비와 기획으로 작은 행사에도 소홀함 없이 최고의 만족을 선사해드립니다
+                        </span>
+                    </div>
+                    <div class="list experience">
+                        <p class="tit">
+                            EXPERIENCE
+                        </p>
+                        <span class="info">
+                            여러가지 풍부한 현장경험과 연간 300회 이상의 행사연출을 바탕으로 행사의 시작부터 종료까지 완벽하게 책임지며 모든 과정을 쉽고 빠르게 진행해드립니다.
+                        </span>
+                    </div>
+                    <div class="list sensation">
+                        <p class="tit">
+                            SENSATION
+                        </p>
+                        <span class="info">
+                            다른 업체에선 볼 수 없었던 감각적이면서 독보적인 컨텐츠와 서비스를 제공하여 고객의 입장에서 생각하고 행동함으로써 신뢰할 수 있는 행사를 만들어드리겠습니다.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer id="footer">
+            <div class="container">
+                <a href="" class="logo">
+                    <img src="/img/common/logo.png" alt="">
+                </a>
+                <ul>
+                    <li>경기도 시흥시 계수로 126번길 60</li>
+                    <li>TEL:010-7797-9479 | FAX:031-318-6637</li>
+                    <li>경기도 시흥시 계수로 126번길 60</li>
+                    <li class="copy">© evnetPd, ALL RIGHTS RESERVED.</li>
+                </ul>
+            </div>
+        </footer>
+    </div> <!-- .wrap End -->
+    <div class="overlay"></div>
+    <div class="popup">
+        <div class="popup_wrap">
+            <div class="tit_wrap">
+                <p class="popup_tit"></p>
+                <button type="button" class="popup_close">닫기</button>
+            </div>
+            <div class="popup_slide swiper-container">
+                <ul class="swiper-wrapper">
+                </ul>
+                
+            </div>
+        </div>
+        <div class="popup_btn">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.8/swiper-bundle.min.js"></script> -->
+    <script src="js1/script.js"></script>
+    <script src="js1/swiper.min.js"></script>
+    <script type="text/javascript">
+
+
+$('.top_content .cont_wrap .thumb').click(function(){
+    const contIdx = $(this).parents('.cont_wrap').index();
+    secIdx = $(this).parents('.section').index()+1; // 클릭한 section의 위치
+    thumbIdx = $(this).index(); // 클릭한 thumb 위치
+    var clickInx= $(this).parent(secIdx).index(); 
+    var folderArr = ['sound','light','stage']
+    var folderArr2 = ['sound','light','stage']
+    var arr = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15'];
+    var img = $('img');
+    var n = 0; //임의로 지정한 수
+
+        while (n < 5) {
+            n++;
+    
+            //이미지 객체생성
+            const image = new Image();
+            image.src = "/img/"+folderArr2[contIdx-1]+"/"+folderArr[contIdx-1]+secIdx+"-"+arr[thumbIdx]+"-"+n+".jpg";
+            
+            //image 태그 생성
+            $('.popup .popup_wrap .swiper-wrapper').append($('<li class="swiper-slide"><img src='+image.src+' onerror="this.remove ? this.parentElement.remove() : this.removeNode()">'+'</li>'));
+    
+        }
+      
+    return false;
+})
+$('.bottom_content .cont_wrap .thumb').click(function(){
+    const contIdx = $(this).parents('.cont_wrap').index();
+    secIdx = $(this).parents('.section').index()+1; // 클릭한 section의 위치
+    thumbIdx = $(this).index(); // 클릭한 thumb 위치
+    var clickInx= $(this).parent(secIdx).index(); 
+    var folderArr = ['truss','effect','etc']
+    var folderArr2 = ['truss','effect','etc']
+    var arr = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15'];
+    var img = $('img');
+    var n = 0; //임의로 지정한 수
+    
+        while (n < 5) {
+            n++;
+    
+            //이미지 객체생성
+            const image = new Image();
+            image.src = "/img/"+folderArr2[contIdx-1]+"/"+folderArr[contIdx-1]+secIdx+"-"+arr[thumbIdx]+"-"+n+".jpg";
+            
+            //image 태그 생성
+            $('.popup .popup_wrap .swiper-wrapper').append($('<li class="swiper-slide"><img src='+image.src+' onerror="this.remove ? this.parentElement.remove() : this.removeNode()">'+'</li>'));
+            
+            
+        }
+        
+    return false;
+})
+
+</script>
+</body>
+</html>

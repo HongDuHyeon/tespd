@@ -36,13 +36,13 @@
         background: url(/img/common/slider1.png) no-repeat center center;
     }
     .main_slide li.stage {
-        background: url(/img/common/slider4.png) no-repeat center center;
+        background: url(/img/common/slider5.png) no-repeat center center;
     }
     .main_slide li.sound {
         background: url(/img/common/slider3.png) no-repeat center center;
     }
     .main_slide li.truss {
-        background: url(/img/common/slider5.png) no-repeat center center;
+        background: url(/img/common/slider4.png) no-repeat center center;
     }
     .main_slide li.special {
         background: url(/img/common/slider2.png) no-repeat center center;
@@ -76,6 +76,7 @@
         font-size: 0;
         width: 60px;
         height: 60px;
+        z-index: 9999;
     }
     #header .ham p{
         position: absolute;
@@ -127,15 +128,16 @@
         transform: rotate(45deg);
     }
     #header .gnb {
-        position: absolute;
+        display: block;
+        position: fixed;
         right: -100%;
         top: 0;
         width: 300px;
         height: 100vh;
         padding-top: 60px;
         background: #fff;
-        display: block;
         transition: right 0.3s;
+        z-index: 9999;
     }
     #header .gnb.view {
         right: 0;
@@ -160,6 +162,7 @@
         height: 160px;
         margin-right: 20px;
     }
+  
     .youtube_content ul li {
         width: 340px;
         height: 240px;
@@ -170,7 +173,29 @@
     }
     
 }
-
+@media (max-width:680px){
+    #header .header_wrap {
+        padding: 0;
+    }
+    .youtube_content .container {
+        margin-right: -20px;
+        
+    }
+    .youtube_content .title_wrap {
+        margin-right: 20px;
+    }
+    .youtube_content ul {
+        display: block;
+        white-space: nowrap;
+        overflow-x: auto;
+        justify-content: unset;
+    }
+    .youtube_content ul li{
+        display: inline-block;
+        width: 250px;
+        height: 200px;
+    }
+}
 @media (max-width:565px){
     
 

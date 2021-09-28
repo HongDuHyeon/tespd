@@ -53,7 +53,6 @@ $('.cont_wrap .thumb').click(function(){
 
    //modal 띄우기
    $('.section dd .thumb').click(function(){
-
          $('.overlay').css('display','block');
         $('.popup').css('display','block');
         $('html, body').css('overflow','hidden')
@@ -71,8 +70,27 @@ $('.cont_wrap .thumb').click(function(){
 
     // hamberger btn 
     $('#header .ham').click(function(){
-        $(this).toggleClass('view')
-        $('#header .gnb').toggleClass('view')
+        $(this).toggleClass('view');
+        $('#header .gnb').toggleClass('view');
+        $('#header .logo').hide();
+        $('.overlay').toggleClass('view');
+        $('html, body').css('overflow','hidden')
+        if($(this).hasClass('view')==false) {
+            $('html, body').css('overflow','visible');
+            $('#header .logo').show();
+        }
+        return false;
     })
- 
+    $(window).scroll(function(){
+        var contentTop = $('.contents').size() ? $('.contents').offset().top : 0;
+        var windowTop = $(this).scrollTop()+200;
+        if(windowTop >= contentTop) {
+            $('#header').addClass('fixed')
+        }else {
+            $('#header').removeClass('fixed')
+        }
+    });
+  
+       
+        
 })
