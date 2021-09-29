@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+
+.contents > .container {
+    margin: 60px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.contents .container > * {
+    width: 50%;
+}
+.contact dl:last-child {
+    margin-top: 50px;
+}
+.contact dt {
+    display: inline-block;
+    font-size: 22px;
+    border-color: #77A3F7;
+    box-shadow: 0 0 4px #77a3f7;
+    color: #3B7EFF;
+    vertical-align: top;
+    border-radius: 10px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-family: 'montserrat';
+}
+.contact dd {
+    font-size: 18px;
+    margin-bottom: 10px;
+    font-family: 'montserrat';
+    font-weight: 500;
+}
+.contact dd:before {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 1px ;
+    background: #333;
+    margin-right: 5px;
+    margin-top: -3px;
+    vertical-align: middle;
+}
+.contact dd.hide {
+    color: #ff0000;
+    font-size: 16px;
+}
+.contact dd.hide span {
+    font-weight: bold;
+}
+.contact dd.hide:before {
+    content: none;
+}
+
+@media (max-width:768px){
+    .contents .container {
+        display: block;
+    }
+    .contents .container > * {
+        width: 100%;
+    }
+    .contact dt {
+        font-size: 18px;
+    }
+    .contact dd {
+        font-size: 14px;
+    }
+    #map {
+        width: 100% !important;
+        height: 300px !important;
+        margin-top: 50px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

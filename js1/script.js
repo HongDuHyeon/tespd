@@ -31,7 +31,27 @@ $('.cont_wrap .thumb').click(function(){
         }
     });
     
-
+    const companySlide = new Swiper('.company_slide', {
+        loop: true,
+        autoplay: {
+            delay:3000
+        },
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+          },
+    })
     
     $('.btn_wrap.top button').click(function(){
         var btnIdx = $(this).index();
@@ -91,6 +111,6 @@ $('.cont_wrap .thumb').click(function(){
         }
     });
   
-       
-        
+    
+    
 })
