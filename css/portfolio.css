@@ -1,0 +1,80 @@
+@charset "utf-8";
+
+.top_section.port {
+    background: url(/img/portfolio/portfolio_bg.jpg) no-repeat center center;
+    background-size: cover;
+    margin-top: -60px;
+}
+.contents .cont_wrap .section .thumb.type01 p {
+    text-align: center;
+    margin-bottom: 10px;
+}
+.contents .cont_wrap .section .thumb.type01 p.tit{
+    font-size: 18px;
+    margin-top: 10px;
+}
+.contents .cont_wrap .section .thumb.type01 p.sub{
+    font-size: 14px;
+}
+
+
+
+@media (max-width:950px){
+}
+
+@media (max-width:768px){
+   
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
