@@ -186,13 +186,7 @@
         background-size: 100% 100%;
     }
     .top_section .tit_wrap {
-        position: absolute;
         top: 60%;
-        left: 50%;
-        width: 100%;
-        padding: 0 30px;
-        transform: translate(-50%, -50%);
-        z-index: 10;
     }
     .top_section.port .tit_wrap {
         top: 65%;

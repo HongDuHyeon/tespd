@@ -51,6 +51,10 @@
 .contact dd.hide:before {
     content: none;
 }
+.contact dd.blog a{
+    color: #3B7EFF;
+    text-decoration: underline;
+}
 
 @media (max-width:768px){
     .contents .container {

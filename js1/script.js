@@ -19,7 +19,7 @@ $('.cont_wrap .thumb').click(function(){
     const mainSlide = new Swiper('.main_slide', {
         loop: true,
         autoplay: {
-            delay: 5000,
+            delay: 7000,
         },
         pagination: {
             el: '.main_slide .swiper-pagination',
@@ -56,19 +56,17 @@ $('.cont_wrap .thumb').click(function(){
     $('.btn_wrap.top button').click(function(){
         var btnIdx = $(this).index();
         $(this).addClass('active').siblings().removeClass('active');
-        $('.top_content .cont_wrap').removeClass('active').fadeOut(0);
-        $('.top_content .cont_wrap').eq(btnIdx).addClass('active').fadeIn(800);
+        $('.top_content .cont_wrap').removeClass('active').fadeOut();
+        $('.top_content .cont_wrap').eq(btnIdx).fadeIn(1000).addClass('active');
     });
     $('.btn_wrap.bottom button').click(function(){
         var btnIdx = $(this).index();
         $(this).addClass('active').siblings().removeClass('active');
-        $('.bottom_content .cont_wrap').removeClass('active').fadeOut(0);
-        $('.bottom_content .cont_wrap').eq(btnIdx).addClass('active').fadeIn(800);
+        $('.bottom_content .cont_wrap').removeClass('active').fadeOut();
+        $('.bottom_content .cont_wrap').eq(btnIdx).fadeIn(800).addClass('active');
     });
     var contIdx = $('.top_content .cont_wrap').index();
     var secIdx = $('.top_content .cont_wrap div').index();
-// console.log(contIdx)
-// console.log(secIdx)
 
 
    //modal 띄우기
@@ -79,7 +77,6 @@ $('.cont_wrap .thumb').click(function(){
         return false;
     });
     //버튼 누를때마다 리스트 삭제 , 모달 닫기
-    // popup_slide > swiper-wrapper > swiper-slide 
     $('.popup_close').click(function(){
         popupSlide.destroy(); 
         $('.popup_slide .swiper-wrapper li').remove(); 
